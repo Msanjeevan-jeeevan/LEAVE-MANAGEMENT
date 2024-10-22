@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leave Application Form</h1>
+        <form id="leaveForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="leaveType">Leave Type:</label>
+            <select id="leaveType" required>
+                <option value="">Select Leave Type</option>
+                <option value="casual">Casual Leave</option>
+                <option value="medical">Medical Leave</option>
+            </select>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" required>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" required>
+
+            <label for="reason">Reason:</label>
+            <textarea id="reason" required></textarea>
+
+            <button type="submit">Apply for Leave</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
